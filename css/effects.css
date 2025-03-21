@@ -1,0 +1,211 @@
+/*Crystals code*/
+.first-crystals{
+    position: absolute;
+    top: -55px;
+    left: 95%;
+    transform: translatex(-50%);
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.crystal-svg{
+    position: absolute;
+    width: 120px;
+    top: -60px;
+    left: 50%;
+    transform: rotate(39deg);
+    filter: drop-shadow(2px 3px 1px black);
+}
+.crystal-svg.left {
+    position:absolute;
+    width: 100px;
+    top: 5px;
+    left: 95%;
+    transform: rotate(35deg);
+}
+.crystal-svg.right {
+    position:absolute;
+    width:90px;
+    top: -32px;
+    left: -34px;
+    transform: rotate(35deg);
+}
+.second-crystals {
+    position: absolute;
+    bottom: -25px;
+    left: -30%;
+    transform: translate(-50%);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(2px 3px 1px black);
+}
+.crystal-svg2 {
+    position: absolute;
+    width: 120px; 
+    top: 0;
+    left: 50%;
+    transform: rotate(39deg);
+}
+.crystal-svg2.left {
+    width: 80px;
+    top: -40px;
+    left: 70%;
+    transform: rotate(50deg);
+}
+.crystal-svg2.right {
+    width: 100px;
+    top: -10px;
+    right: 60%;
+    transform: rotate(50deg);
+}
+.first-crystals .crystal-svg,
+.first-crystals .crystal-svg.left,
+.first-crystals .crystal-svg.crystal-svg.right{
+    transition: all 0.6s ease;
+}
+.second-crystals .crystal-svg2.left,
+.second-crystals .crystal-svg2.right{
+    transition: all 0.6s ease;
+}
+.main-img:hover ~ .first-crystals .crystal-svg {
+    transform: translate(-50%, -10%) rotate(35deg);
+    transition: all 0.4s ease;
+}
+
+.main-img:hover ~ .first-crystals .crystal-svg.left {
+    transform: translate(-50%, -20%) rotate(35deg);
+    transition: all 0.4s ease;
+}
+
+.main-img:hover ~ .first-crystals .crystal-svg.right {
+    transform: translate(-60%, -12px) rotate(35deg);
+    transition: all 0.4s ease;
+}
+.main-img:hover ~ .second-crystals .crystal-svg2.left {
+    transform: translate(-50%, -30%) rotate(50deg);
+    transition: all 0.4s ease; 
+}
+.main-img:hover ~ .second-crystals .crystal-svg2.right {
+    transform: translate(-50%, -30%) rotate(50deg);
+    transition: all 0.4s ease;
+}
+
+.crystal-svg, .crystal-svg2{
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+
+.img-container.active .crystal-svg{
+    opacity: 1;
+}
+
+.img-container.active .crystal-svg2{
+    opacity: 1;
+}
+/*crystals code*/
+/*Developed card effects*/
+.developed .cover::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(
+        from 0deg,
+        rgba(139, 14, 255, 0.589) 0deg,
+        rgba(130, 13, 240, 0.658) 5deg,
+        transparent 5deg,
+        transparent 15deg
+    );
+    clip-path: circle(70% at center); 
+    z-index: 0; 
+    pointer-events: none; 
+}
+.timer-svg {
+    width: 140px;
+    height: auto;
+    z-index: 5; 
+    position: relative;
+}
+.hover-title span{
+    display: inline-block;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    margin: 0 2px;
+    transition: transform  0.3s ease;
+}
+
+.hover-title span:hover{
+    transform: translateY(-3px);
+    color:#7e00c7;
+}
+.card-body::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0,0,0,0) 10%, rgba(255, 255, 255, 0.2) 11%, rgba(0,0,0,0)12%) 0 0;
+    background-size: 20px 20px;
+    pointer-events: none;
+    z-index: 1;
+}
+/* my skils*/
+.mySkills::before{
+    content:"";
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(
+        from 0deg,
+        rgba(255, 255, 255, 0.3) 0deg,
+        rgba(255, 255, 255, 0.422) 5deg,
+        transparent 5deg,
+        transparent 15deg
+    );
+    mask-image: radial-gradient(circle, transparent 30%, black 70%);
+    -webkit-mask-image: radial-gradient(circle, transparent 30%, black 70%);
+    z-index: 1;
+}
+
+.mySkills::after{
+    content:"";
+    position:absolute;
+    inset: 0;
+    background: radial-gradient(circle, transparent 60%, rgba(255, 255, 255, 0.2) 70%, transparent 80%);
+    background-blend-mode: lighten;
+ 
+}
+.dots{
+    content: "";
+    inset: 0;
+    background: radial-gradient(circle, transparent 10%, #ffffff 12%, transparent 14%);
+    background-size: 20px 20px;
+    opacity: 0.5;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+/*main text*/
+.hover-word{
+    display: inline-block;
+ }
+
+ .hover-word span{
+    display: inline-block;
+   
+ }
+
+ .hover-word span.hovered{
+    transform: scale(1.2) translateY(-3px);
+    color: #173efe;
+    text-shadow: 1px 2px 1px black;
+    transition: transform 0.3s ease;
+ }
