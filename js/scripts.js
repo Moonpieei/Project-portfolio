@@ -26,7 +26,7 @@ document.addEventListener("wheel", (event) =>{
     }, 500);
 });
 
- 
+ if(window.innerWidth > 1024){
  document.querySelectorAll(".card-container").forEach((card, index) =>{
     gsap.from(card,{
         opacity: 0,
@@ -50,7 +50,8 @@ document.addEventListener("wheel", (event) =>{
         }
     });
  });
-
+ }
+ 
  if(window.innerWidth > 1024){
  document.querySelectorAll(".skill-container").forEach((skill, index) =>{
     gsap.from(skill,{
