@@ -14,8 +14,11 @@ Added animated favicon transitions for a small but lively detail.
 
 🚀 **Future Plans**
 In the future, I plan to develop this portfolio further by:
+
 ● Blending it with a Lo-fi & Pixel Art aesthetic,
+
 ● Turning it into an interactive, game-like experience,
+
 ● Offering a more dynamic and layered showcase of my work.
 
 Thanks for stopping by this little moonpie corner of the web!
